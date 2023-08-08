@@ -36,8 +36,12 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.6rem;
+    transition: text-decoration 1s ;
 }
-
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
 main {
     display: flex;
     gap: 8em;
@@ -81,6 +85,10 @@ h1 {
     border-radius: 1.9em;
     padding: 1em 2em;
 }
+.btn-1:hover {
+    cursor: pointer;
+    background-color: #f1ebaf;
+}
 
 .btn-2  {
     font-size: 1.8rem;
@@ -93,7 +101,15 @@ h1 {
 }
 .btn-2 svg {
     width: 20px;
+    
 }
+
+
+.btn-2:hover svg {
+    transform: translateX(4px);
+
+}
+
 
 .news {
     display: flex;
